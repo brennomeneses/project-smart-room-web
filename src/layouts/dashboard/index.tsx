@@ -1,7 +1,7 @@
-import { Button, Layout, Menu } from "antd";
+import { Layout, Menu } from "antd";
 import { HomeOutlined, BarsOutlined, DeleteOutlined, LogoutOutlined, GithubOutlined } from '@ant-design/icons';
 import React from "react";
-import { ContentPages, FootButton, Logo } from "./styles";
+import { ContentPages, Logo } from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 
 interface Props {
@@ -41,7 +41,11 @@ const DashboardLayout: React.FC<Props> = ({ children }) =>{
                 </Menu.Item>
                 <Menu.SubMenu title="Mais">
                     <Menu.Item icon={<GithubOutlined />}>
-                        <a href="https://github.com/brennomeneses/project-smart-home" target="_blank">
+                        <a
+                          href="https://github.com/brennomeneses/project-smart-home"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                             Código Fonte
                         </a>
                     </Menu.Item>
